@@ -1,0 +1,85 @@
+*{
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#High-scores {
+    text-align: left;
+    font-size: 23px;
+}
+
+#timer {
+    text-align: right;
+    font-size: 35px;
+    color: red;
+    font-weight: bolder;
+    position: fixed;
+
+}
+
+.container {
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 3%;
+    
+}
+
+#coding-title {
+    font-size: 54px;
+    padding-bottom: 20px;
+}
+
+#code-quiz-p {
+    font-size: 22px;
+    padding: 20px;
+}
+
+#start-btn {
+    width: 90px;
+    height: 33px;
+    margin: 10px;
+    background-color: darkblue;
+    color: white;
+    outline: none;
+    font-size: 17px;
+    box-shadow: 3px 2px 2px grey;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+.ques1-text {
+    padding: 18px;
+}
+
+.questions-container {
+   padding-left: 4.1%;
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    font-size: 20px;
+}
+.question-text-one,
+.question-text-two,
+.question-text-three,
+.question-text-four,
+.question-text-five {
+
+    padding-bottom: 1%;
+    border-bottom: 0.5rem solid black;
+    margin-bottom: 3%;
+}
+
+#answer1,
+#answer2,
+#answer3,
+#answer4,
+#answer5 {
+    font-size: 28px;
+    font-weight: 50;
+}

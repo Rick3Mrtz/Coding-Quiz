@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header class="score-time">
+    <div id="High-scores">
+        <a href="./highscores.html">View Highscores</a>
+    </div>
+    <div id="timer">75sec</div>
+    
+</header>
+
+<body>
+    <div class="container start-block">
+        <h1 id="coding-title">Coding Quiz</h1>
+            <p id="code-quiz-p">Answer all of the following questions within the time limit. <br>The fastest time wins! But keep in mind, for every wrong answer, <br>you get penalized 15 seconds. Good luck!<br>
+            </p>
+            <button id="start-btn">Start</a>
+            </button>
+    </div>
+
+                    <!--    Questions Page  -->
+
+    <div class="questions-container">
+        <section id='question-text-1' class=" hidden">
+            <h1 id="firstQuestion">
+            1. In healthcare, what does CPR stand for?
+            </h1>
+                <ul class="firstQuesChoices">
+                    <div class="ques1-text" id="answer1"></div>
+
+                 <li><input type="checkbox" id="incorrect" name="question1" class="option1" onclick="showQuestion(2); subtractSec()"> Cardiac Pulse Responsiveness</li>
+
+                 <li><input type="checkbox" name="question1"  class="option1"  onclick="showQuestion(2)" id="correct-1"> Cardiopulmonary Resuscitation</li>
+
+                 <li><input type="checkbox"id="incorrect" name="question1" class="option1" onclick="showQuestion(2)">  Cricoid Pressure Release</li>
+                 
+                 <li><input type="checkbox"id="incorrect" name="question1" class="option1" onclick="showQuestion(2)"> Coronary pneumonia Relapse </li>
+                </ul>
+        </section>
+
+
+
+        <section id='question-text-2' class=" hidden">
+            <h1 id="secondQuestion">
+            2. When should someone administer CPR? 
+            </h1>
+                <ul class="secondQuesChoices">
+                    <div class="ques2-text" id="answer2"></div>
+        
+                    <li><input type="checkbox"id="incorrect" name="question2" class="option2"  
+                        onclick="showQuestion(3)"> When someone collapses next to you</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question2" class="option2"  
+                        onclick="showQuestion(3)"> When someone yells for help</li>
+
+                    <li><input type="checkbox" name="question2" class="option3" id="correct-2" 
+                        onclick="showQuestion(3)"> When someone has no pulse</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question2" class="option4"  
+                        onclick="showQuestion(3)"> When someone winks at you seductively</li>
+                </ul>
+        </section>
+
+
+
+        <section id="question-text-3" class="hidden">
+            <h1 id="thirdQuestion">
+            3. Which chief complaint is best considered an "EMERGENCY" and requires to be seen by an Emergency Room physician/staff?
+            </h1>
+                <ul class="thirdQuesChoices">
+                    <div class="ques3-text" id="answer3"></div>
+                    
+                    <li><input type="checkbox"id="incorrect" name="question3" class="option2"  
+                        onclick="showQuestion(4)"> "I just took Pre-Workout and I'm blinking too fast"</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question3" class="option2" 
+                        onclick="showQuestion(4)"> "My wife left me so I need narcotics"</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question3" class="option3"  
+                        onclick="showQuestion(4)"> "It's cold outside, can I have a room and some coffee?"</li>
+
+                    <li><input type="checkbox" name="question3" class="option4" id="correct-3" onclick="showQuestion(4)"> "Severe anaphylactic reaction to unknown medication</li>
+                </ul>
+        </section>
+
+
+
+        <section id="question-text-4" class="hidden">
+            <h1 id="fourthQuestion">
+            4. Which one of these are NOT considered symptoms of having a stroke?
+            </h1>
+                <ul class="fourthQuesChoices">
+                    <div class="ques4-text" id="answer4"></div>
+
+                    <li><input type="checkbox" name="question4" class="option2" id="correct-4" 
+                        onclick="showQuestion(5)"> Stubbed Toe</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question4" class="option2" 
+                        onclick="showQuestion(5)"> Facial paralysis</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question4" class="option3"  
+                        onclick="showQuestion(5)"> Unilateral extremity numbness</li>
+
+                    <li><input type="checkbox"id="incorrect" name="question4" class="option4"  
+                        onclick="showQuestion(5)"> Loss of equilibrium/balance</li>
+                </ul>
+        </section>
+
+
+
+        <section id="question-text-5" class= "hidden">
+            <h1 id="fifthQuestion">
+            5. Which medication should be given when patient is tachycardic at > 150bpm and is in SVT?
+            </h1>
+                <ul class="fifthQuesChoices">
+                    <div class="ques5-text" id="answer5"></div>
+
+                    <li><button type="checkbox"id="incorrect" name="question5" class="option2" 
+                        onclick="lastPage"></button> Toradol</li>
+
+                    <li><button type="checkbox"id="incorrect" name="question5" class="option2" 
+                        onclick="lastPage"></button> Zofran</li>
+
+                    <li><button type="checkbox" name="question5" class="option3" id="correct-5" 
+                        onclick="lastPage"></button> Adenosine</li>
+                        
+                    <li><button type="checkbox"id="incorrect" name="question5" class="option4" 
+                        onclick="lastPage"></button> Omnipaque</li>
+                </ul>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
